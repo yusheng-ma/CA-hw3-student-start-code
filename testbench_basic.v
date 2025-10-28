@@ -140,6 +140,7 @@ initial begin
 
         valid = 1;
         @(posedge clk);
+        #1;
         valid = 0;
         cycle_count = cycle_count + 1;
     end
